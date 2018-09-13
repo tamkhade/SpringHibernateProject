@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+
+	<definition name="baselayout" template="/WEB-INF/tiles-Jsp/baselayout1.jsp">
+
+		<put-attribute name="header" value="/WEB-INF/tiles-Jsp/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="leftsidebar" value="/WEB-INF/tiles-Jsp/leftsidebar.jsp" />
+		<put-attribute name="sidebar" value="/WEB-INF/tiles-Jsp/sidebar.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles-Jsp/footer.jsp" />
+	</definition>
+	<!-- <start by Aazam> -->
+
+	<definition name="IndexPage" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/HomePage.jsp" />
+	</definition>
+	
+	<definition name="EmployeeMaster" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/EmployeeMaster.jsp" />
+	</definition>
+	
+	<definition name="consultantView" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/ConsultantViewForm.jsp" />
+	</definition>
+	
+	<definition name="ConsultantMaster" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/ConsultantMaster.jsp" />
+	</definition>
+	
+	<definition name="employeeView" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/EmployeeView.jsp" />
+	</definition>
+	
+	<!-- <End by Aazam> -->
+
+	<!-- <start by Mahesh> -->
+	<definition name="Reception" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/Reception.jsp" />
+	</definition>
+	
+	<definition name="Homepage" extends="baselayout">
+		<put-attribute name="body" value="" />
+	</definition>
+	
+	<definition name="viewpatient" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/Viewpatient.jsp" />
+	</definition>
+	
+	<definition name="patientConfirmation" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/patientConfirmation.jsp" />
+	</definition>
+	
+	<definition name="test" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/test.jsp" />
+	</definition>
+
+	<!-- <End by Mahesh> -->
+
+	<!-- <Start by Rd7> -->
+	<definition name="ClientForm" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/ClientForm.jsp" />
+	</definition>
+	
+	<definition name="ReferralMaster" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/ReferralMaster.jsp" />
+	</definition>
+	
+	
+	
+
+	
+	
+
+	<!-- <End by Rd7> -->
+
+	<!-- <Start by Roshani> -->
+	<!-- <End by Roshani> -->
+
+	<!-- <Start by Amruta> -->
+	<!-- <End by Amruta> -->
+
+	<!-- <Start by Nikhil> -->
+	<definition name="OrgMaster" extends="baselayout">
+		<put-attribute name="body" value="/WEB-INF/jsp/OrgMaster11.jsp" />
+	</definition>
+	<!-- <End by Nikhil> -->
+
+
+</tiles-definitions>  
